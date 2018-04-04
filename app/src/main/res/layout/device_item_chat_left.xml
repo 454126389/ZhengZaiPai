@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commonMargin2"
+    android:layout_marginTop="@dimen/commonMargin2"
+    android:orientation="horizontal"
+    android:id="@+id/root"
+    >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="22.0dip"
+        android:background="@drawable/shape_common_grey"
+        android:gravity="center"
+        android:paddingBottom="4.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="4.0dip"
+        android:text="2016年10月6日20:30:18"
+        android:textColor="@color/white"
+        android:textSize="@dimen/smallTextSize" />
+
+    <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="44.0dip"
+        android:layout_height="44.0dip"
+        android:layout_below="@id/date"
+        android:src="@mipmap/chat_head_img_left"
+    />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_toRightOf="@id/head_img"
+        android:text="姓名"
+        android:textColor="@color/textHintColor"
+        android:textSize="@dimen/smallTextSize" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/head_img"
+        android:background="@mipmap/skin_aio_friend_bubble_nor"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/device_max_chat_width"
+            android:paddingLeft="@dimen/commonMargin2"
+            android:paddingRight="@dimen/commonMargin2" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commonMargin2"
+            android:src="@mipmap/esi" />
+        <!--android:src="@drawable/anim_play_left" />-->
+
+        <TextView
+            android:id="@+id/length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:text="42''"
+            android:textSize="10.0sp" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/device_max_chat_img_width"
+            android:maxWidth="@dimen/device_max_chat_img_width"
+            android:minHeight="@dimen/device_min_chat_img_width"
+            android:minWidth="@dimen/device_min_chat_img_width" />
+    </LinearLayout>
+
+    <View
+        android:visibility="invisible"
+        android:id="@+id/unread"
+        android:layout_width="4.0dip"
+        android:layout_height="4.0dip"
+        android:layout_alignTop="@id/container"
+        android:layout_marginTop="16.0dip"
+        android:layout_toRightOf="@id/container"
+        android:background="@drawable/shape_round_red" />
+
+    <ImageView
+        android:id="@+id/reload"
+        android:layout_width="16.0dip"
+        android:layout_height="16.0dip"
+        android:layout_alignTop="@id/container"
+        android:layout_marginLeft="6.0dip"
+        android:layout_marginTop="14.0dip"
+        android:layout_toRightOf="@id/container"
+        android:src="@mipmap/euc" />
+</RelativeLayout>

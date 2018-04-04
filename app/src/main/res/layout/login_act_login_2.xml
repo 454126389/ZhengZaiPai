@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <View
+        android:id="@+id/center_point"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btn_account"
+        style="@style/border_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_wechat"
+        android:layout_marginBottom="@dimen/commonMargin2"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginRight="32.0dip"
+        android:drawableLeft="@mipmap/login_ic_logintype_account"
+        android:drawablePadding="18.0dip"
+        android:drawableStart="@mipmap/login_ic_logintype_account"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="0.0dip"
+        android:text="@string/loginLoginByAccount"
+        android:textSize="@dimen/largeTextSize"
+  />
+
+    <Button
+        android:id="@+id/btn_wechat"
+        style="@style/border_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="32.0dip"
+        android:layout_marginRight="32.0dip"
+        android:layout_marginTop="@dimen/commonMargin2"
+        android:drawableLeft="@mipmap/login_ic_logintype_wechat"
+        android:drawablePadding="18.0dip"
+        android:drawableStart="@mipmap/login_ic_logintype_wechat"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="0.0dip"
+        android:text="@string/loginLoginByWeChat"
+        android:textSize="@dimen/largeTextSize"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_account"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/select_login_type"
+        android:textSize="30.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_sign_up"
+        style="@style/border_textview"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28.0dip"
+        android:layout_marginTop="@dimen/commonMargin2"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip"
+        android:textSize="@dimen/textSize"
+        android:text="@string/login_goSignUp"
+/>
+</RelativeLayout>

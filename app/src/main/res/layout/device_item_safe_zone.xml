@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/slide_layout"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@drawable/sel_common_item">-->
+
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12.0dip"
+    android:layout_marginTop="12.0dip"
+    android:orientation="horizontal"
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="96.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:text="你好啊你好啊"
+            android:textColor="@color/themeTextColor" />
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1.0"
+            android:drawableEnd="@mipmap/arrow_down_grey"
+            android:drawableRight="@mipmap/arrow_right_grey"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_compat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:id="@+id/slide_hide_panel"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:background="@color/red_700"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/slide_hide_panel"-->
+        <!--android:layout_width="80.0dip"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/red_700"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/delete"-->
+        <!--android:textColor="@color/white" />-->
+<!--</LinearLayout>-->

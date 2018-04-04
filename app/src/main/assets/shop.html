@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<title>My Page</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+     -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" type="text/css">
+
+    
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    alert('Hi,I am a alert!');
+    
+});
+</script>  
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="header">
+            <h1>My Title</h1>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+
+            <fieldset data-role="fieldcontain">
+                <label for="day">选择日期</label>
+                <select name="day" id="day">
+                    <option value="mon">星期一</option>
+                    <option value="tue">星期二</option>
+                    <option value="wed">星期三</option>
+                </select>
+            </fieldset>
+
+            <fieldset data-role="fieldcontain">
+                <label for="day">选择天</label>
+                <select name="day" id="day" >
+                    <option value="mon">星期一</option>
+                    <option value="tue">星期二</option>
+                    <option value="wed">星期三</option>
+                    <option value="thu">星期四</option>
+                    <option value="fri">星期五</option>
+                    <option value="sat">星期六</option>
+                    <option value="sun">星期日</option>
+                </select>
+            </fieldset>
+
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+            <form>
+                <label for="slider-0">Input slider:</label> 
+                <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" />
+            </form>
+            <a href="#" data-role="button" data-icon="star" data-theme="a">Star button</a>
+            <a href="#" data-role="button" data-icon="star" data-theme="b">Star button</a>
+            <a href="#" data-role="button" data-icon="star" data-theme="c">Star button</a>
+            <a href="#" data-role="button" data-icon="star" data-theme="d">Star button</a>
+            <a href="#" data-role="button" data-icon="star" data-theme="e">Star button</a>
+        </div>
+        <!-- /content -->
+
+    </div>
+    <!-- /page -->
+</body>
+</html>

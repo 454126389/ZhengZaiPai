@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="98.0dip">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="98.0dip"
+        android:background="@mipmap/ic_home_bottom"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/position_date"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-05-26 11:16:59"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+            app:layout_constraintLeft_toRightOf="@id/tv_name"
+            app:layout_constraintStart_toEndOf="@id/tv_name" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1.0dip"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:background="@color/textHintColor"
+            app:layout_constraintBottom_toBottomOf="@id/tv_date"
+            app:layout_constraintLeft_toRightOf="@id/tv_date"
+            app:layout_constraintStart_toEndOf="@id/tv_date"
+            app:layout_constraintTop_toTopOf="@id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_position_datatype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:text="@string/data_type_gps"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+            app:layout_constraintLeft_toRightOf="@id/divider"
+            app:layout_constraintStart_toEndOf="@id/divider" />
+
+        <ImageView
+            android:id="@+id/iv_battery"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:src="@mipmap/ic_battery_3"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dip"
+            android:text="70%"
+            android:textColor="@color/textHintColor"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+            app:layout_constraintEnd_toStartOf="@id/iv_battery"
+            app:layout_constraintRight_toLeftOf="@id/iv_battery" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6.0dip"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="小嘟嘟的位置"
+            android:textColor="@color/textColorContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_address1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="广东省深圳市宝安区西乡街道劳动路576号财富港花园科技园B座1、2区"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/tv_username"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_username"
+            app:layout_constraintTop_toBottomOf="@id/tv_username" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="无位置信息"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btn_refresh"
+        android:layout_width="44.0dip"
+        android:layout_height="44.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:background="@mipmap/home_ic_tab_location"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+</RelativeLayout>

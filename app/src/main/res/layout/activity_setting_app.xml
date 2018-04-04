@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+  <!--  <com.leon.lib.settingview.LSettingItem
+        leon:leftIcon="@mipmap/message"
+        android:id="@+id/set_languaga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:isShowRightText="true"
+        leon:rightText="@string/languaga_cn"
+        leon:leftIconSize="0dp"
+        leon:leftText="@string/set_languaga"
+        leon:leftTextMarginLeft="30dp"
+        leon:rightStyle="iconHide"
+        />
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/set_clear_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        leon:isShowRightText="true"
+        leon:leftIconSize="0dp"
+        leon:leftText="@string/set_clear_save"
+        leon:leftTextMarginLeft="30dp"
+        leon:rightTextColor="@color/gray"
+        leon:rightText="0M"
+        leon:rightTextSize="14sp"/>
+
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/set_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIconSize="0dp"
+        leon:leftTextMarginLeft="30dp"
+        leon:leftText="@string/set_about"
+        leon:rightStyle="iconHide"/>
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/set_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIconSize="0dp"
+        leon:leftTextMarginLeft="30dp"
+        leon:leftText="@string/set_help"
+        leon:rightStyle="iconHide"/>-->
+
+</LinearLayout>

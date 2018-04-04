@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_chat_item"
+    android:layout_width="fill_parent"
+    android:layout_height="72.0dip"
+    android:background="@drawable/sel_common_item">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="44.0dip"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/commonMargin2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="16.0dip"
+        android:gravity="center"
+        android:minWidth="16.0dip"
+        android:text="23"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/smallTextSize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/icon"
+        app:layout_constraintRight_toRightOf="@id/icon"
+        app:layout_constraintTop_toTopOf="@id/icon"
+ />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:layout_marginTop="16.0dip"
+        android:text="09:20"
+        android:textColor="@color/textHintColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/commonMargin2"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:layout_marginTop="8.0dip"
+        android:maxLines="1"
+        android:text="Teemo"
+        android:textSize="@dimen/largeTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/tv_content"
+        app:layout_constraintEnd_toStartOf="@+id/tv_date"
+        app:layout_constraintLeft_toRightOf="@+id/icon"
+        app:layout_constraintRight_toLeftOf="@+id/tv_date"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="@dimen/commonMargin2"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:maxLines="1"
+        android:text="你永远不知道下一个被我垫脚的会是谁————帕楚利亚"
+        android:textColor="@color/textHintColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_date"
+        app:layout_constraintLeft_toRightOf="@id/icon"
+        app:layout_constraintRight_toLeftOf="@id/tv_date"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+</android.support.constraint.ConstraintLayout>

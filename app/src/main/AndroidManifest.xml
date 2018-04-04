@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.conqueror.com.zhengzaipai"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--录音-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <!--系统弹窗-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!--bugly-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!--bugly-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <!--zxing-->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+
+
+    <!--支付宝-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--高德地图-->
+
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <!--xutils-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <!--android:name=".App"-->
+    <!--android:name="android.support.multidex.MultiDexApplication"-->
+    <application
+
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="i16HLq1Hs2GyoXamvqU84VLvxavF18Ce" />
+
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="8f511136384bb61e84d26d51d65b587f">
+        </meta-data>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+        <!--<activity android:name=".HowToUseActivity"-->
+        <!--<activity android:name=".SplashActivity"-->
+
+        <!--<activity android:name=".mainfragment.watch.ScannerActivity"-->
+
+
+        <!--<activity android:name=".mainfragment.watch.login.LoginActivity"-->
+
+        <!--<activity android:name=".mainfragment.watch.googlemap.MapsActivity"/>-->
+        <!--<activity android:name=".mainfragment.watch.login.LoginSelectActivity"-->
+        <activity android:name=".SplashActivity"
+                    android:configChanges="keyboardHidden|orientation|screenSize|locale"
+                    >
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
+
+
+        <activity android:name=".mainfragment.watch.login.LoginSelectActivity"  />
+
+        <activity android:name=".mainfragment.watch.WatchTabActivity" />
+
+        <activity android:name=".mainfragment.watch.login.LoginActivity" />
+        <activity android:name=".mainfragment.watch.login.signup.SignUpActivity" />
+
+        <activity android:name=".mainfragment.watch.device.AddDevice.AddDeviceActivity" />
+        <activity android:name=".mainfragment.watch.device.AddDevice.addlist.AddListActivity" />
+        <activity android:name=".mainfragment.watch.device.AddDevice.addlist.binddevice.BindDeviceActivity"
+            android:windowSoftInputMode="adjustPan"
+            />
+
+        <activity android:name=".mainfragment.watch.device.ActMessage.ActMessageActivity" />
+        <activity android:name=".mainfragment.watch.device.LoveBons.LoveBonsActivity" />
+        <activity android:name=".mainfragment.watch.device.PhoneBook.PhoneBookActivity" />
+        <activity android:name=".mainfragment.watch.device.PhoneBook.BookDetailActivity" />
+        <activity android:name=".mainfragment.watch.device.PhoneBook.BookAdd.BookAddActivity" />
+        <activity android:name=".mainfragment.watch.home.phone.PhoneActivity" />
+        <activity android:name=".mainfragment.watch.home.chatlist.chat.ChatActivity" />
+        <activity android:name=".mainfragment.watch.home.chatlist.ChatListActivity" />
+        <activity android:name=".mainfragment.watch.device.ActDnd.ActDndActivity" />
+        <activity android:name=".mainfragment.watch.device.ActWifi.WifiActivity" />
+        <activity android:name=".mainfragment.watch.device.ActFind.ActFindActivity" />
+        <activity android:name=".mainfragment.watch.device.ActSwitch.ActSwitchActivity" />
+        <activity android:name=".mainfragment.watch.device.ActSchedule.ActScheduleActivity" />
+        <activity android:name=".mainfragment.watch.device.ActClock.ActClockActivity" />
+        <activity android:name=".mainfragment.watch.device.ActClock.ClockSet.ClockSetActivity" />
+        <activity android:name=".mainfragment.watch.device.ActRemoteCamera.ActCameraActivity" />
+        <activity android:name=".mainfragment.watch.device.ActRemoteCamera.ImageScaleActivity" />
+        <activity android:name=".mainfragment.watch.device.ActSms.ActSmsActivity" />
+        <activity android:name=".mainfragment.watch.device.ActCallBack.CallBackActivity" />
+        <activity android:name=".mainfragment.watch.device.ActFriend.ActFriendActivity" />
+
+
+        <activity android:name=".mainfragment.watch.device.ActHealth.ActHealthActivity"
+            android:theme="@style/StyledIndicators"
+            />
+        <activity android:name=".mainfragment.watch.device.ActHealth.SetSleep.SetSleepActivity"
+            />
+
+        <activity android:name=".mainfragment.watch.device.ActHealth.SetStep.SetStepActivity"
+            />
+
+
+        <activity android:name=".mainfragment.watch.me.AboutActivity"
+            />
+        <activity android:name=".mainfragment.watch.me.FamilyActivity"
+            />
+
+        <activity android:name=".mainfragment.watch.map.zonelist.ZoneListActivity" />
+        <activity android:name=".mainfragment.watch.googlemap.zonelist.GZoneListActivity" />
+        <activity android:name=".mainfragment.watch.map.zonelist.addzone.AddZoneActivity" />
+        <activity android:name=".mainfragment.watch.googlemap.zonelist.addzone.GAddZoneActivity" />
+        <activity android:name=".mainfragment.watch.map.trail.TrailActivity" />
+        <activity android:name=".mainfragment.watch.googlemap.trail.GTrailActivity" />
+
+
+
+                <activity android:name=".WebActivity" />
+                <activity android:name=".mainfragment.MainTabActivity" />
+                <activity android:name=".mainfragment.onway.OnWayActivity"
+                    android:theme="@style/StyledIndicators"
+                    />
+                <activity android:name=".mainfragment.me.AppSettingActivity" />
+                <activity android:name=".mainfragment.LockDevice.mirror.MirrorTab" />
+                <activity android:name=".mainfragment.LockDevice.mirror.Search.SearchWebActivity" />
+
+
+                <activity android:name=".mainfragment.me.HelpWebActivity" />
+
+
+                <activity android:name=".mainfragment.LockDevice.LockDeviceActivity" />
+                <activity android:name=".app.Function.FunctionActivity" />
+                <activity android:name=".mainfragment.LockDevice.mirror.Navi.NavActivity" />
+                <activity android:name=".mainfragment.LockDevice.mirror.PoiRec.PoiRecActivity" />
+                <activity android:name=".app.SetFragment.SettingActivity" />
+                <activity android:name=".app.map.FileListActivity" />
+                <activity android:name=".mainfragment.LockDevice.mirror.MonitorActivity.MonitorActivity" />
+                <activity android:name=".app.CardService.CardServiceActivity" />
+                <activity android:name=".util.zxing.ScannerActivity" />
+                <activity android:name=".HowToUseActivity" />
+
+               <activity
+                    android:name=".mainfragment.LockDevice.mirror.shop.ServiceShopActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation"
+                    android:exported="false"
+                    android:screenOrientation="behind" >
+                </activity>
+
+                <activity
+                    android:name="com.alipay.sdk.app.H5PayActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation"
+                    android:exported="false"
+                    android:screenOrientation="behind" >
+                </activity>
+                <activity
+                    android:name="com.alipay.sdk.auth.AuthActivity"
+                    android:configChanges="orientation|keyboardHidden|navigation"
+                    android:exported="false"
+                    android:screenOrientation="behind" >
+                </activity>
+        <!--<activity android:name=".mainfragment.watch.home.chatlist.chat.ChatActivity" />-->
+
+        <provider
+                    android:name="android.support.v4.content.FileProvider"
+                    android:authorities="${applicationId}.fileProvider"
+                    android:exported="false"
+                    android:grantUriPermissions="true">
+                    <meta-data
+                        android:name="android.support.FILE_PROVIDER_PATHS"
+                        android:resource="@xml/provider_paths"/>
+                </provider>
+
+                <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
+        <receiver
+            android:name=".receiver.MessageReceiver"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AppReceiver">
+            <intent-filter>
+
+                <!-- Colink 获取Camera反馈过来的图片/视频路径 -->
+                <action android:name="com.conqueror.app.MESSAGE_RECEIVED_ACTION" />
+
+                <!-- 开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 网络变化 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

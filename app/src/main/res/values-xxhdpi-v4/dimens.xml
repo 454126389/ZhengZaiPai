@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_banner_height">108.0dip</dimen>
+    <dimen name="home_bottompanel_height">60.0dip</dimen>
+    <dimen name="home_headimg_size">108.0dip</dimen>
+    <dimen name="home_image_final_width">36.0dip</dimen>
+    <dimen name="home_image_width">72.0dip</dimen>
+    <dimen name="home_menu_size">48.0dip</dimen>
+    <dimen name="home_tabs_height">50.0dip</dimen>
+</resources>

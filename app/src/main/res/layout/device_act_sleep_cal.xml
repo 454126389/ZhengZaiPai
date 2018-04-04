@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/lib_layout_title_bar" />
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_google_hook_header" />
+
+        <ScrollView
+            android:id="@+id/swipe_target"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/device_setting_section">
+
+                    <LinearLayout
+                        android:id="@+id/layout_time"
+                        style="@style/device_setting_item_group">
+
+                        <ImageView
+                            style="@style/device_setting_v_icon"
+                            android:src="@mipmap/device_ic_step_time" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout_sleep_cal_time_slot"
+                            style="@style/device_setting_value_group"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            >
+
+                            <TextView
+                                android:layout_centerVertical="true"
+                                style="@style/device_setting_tv_label"
+                                android:text="@string/time_slot" />
+
+                            <!--<item name="android:gravity">center|right</item>-->
+                            <!--<item name="android:paddingLeft">8.0dip</item>-->
+                            <!--<item name="android:paddingRight">8.0dip</item>-->
+                            <!--<item name="android:layout_width">0.0dip</item>-->
+                            <!--<item name="android:layout_height">wrap_content</item>-->
+                            <!--<item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>-->
+                            <!--<item name="android:maxLines">1</item>-->
+                            <!--<item name="android:singleLine">true</item>-->
+                            <!--<item name="android:layout_weight">1.0</item>-->
+                            <!--<item name="android:layout_alignParentRight">true</item>-->
+                            <!--<item name="android:layout_centerVertical">true</item>-->
+
+                            <TextView
+                                android:layout_marginRight="16dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/sleep_cal_tv_time_slot"
+                                android:gravity="center|right"
+
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/device_setting_item_group"
+                        android:layout_marginTop="1.0dip">
+
+                        <ImageView
+                            style="@style/device_setting_v_icon"
+                            android:src="@mipmap/device_ic_step_switch" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout_switch"
+                            style="@style/device_setting_value_group"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null">
+
+                            <TextView
+                                style="@style/device_setting_tv_label"
+                                android:text="@string/sleep_cal_switch" />
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/sleep_cal_cb_switch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/activity_horizontal_margin" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</LinearLayout>

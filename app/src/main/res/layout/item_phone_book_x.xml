@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="80.0dip"
+    android:layout_marginBottom="6.0dip"
+    android:layout_marginTop="6.0dip"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:background="@mipmap/device_ic_phone_headimg_default_s"
+            android:layout_width="72.0dip"
+            android:layout_height="72.0dip"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/commonMargin2"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4.0dip"
+                android:text="大女儿"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4.0dip"
+                android:text="\ 15045879632"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@color/grey_400" />
+
+        <ImageButton   android:visibility="gone"
+            android:id="@+id/edit"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/sel_common_item"
+            android:padding="12.0dip"
+            android:src="@mipmap/ic_edit" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@color/grey_400" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="80.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/sel_common_item"
+        android:src="@mipmap/ic_delete" />
+</LinearLayout>

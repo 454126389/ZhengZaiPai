@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/lib_layout_title_bar" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/commonMargin2"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:layout_marginTop="20.0dip"
+        android:digits="@string/digits_phone"
+        android:hint="@string/login_sign_up_step_1"
+        android:inputType="phone"
+        android:maxLength="@integer/length_phone_vcode"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_vcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/btn_vcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/send_vcode" />
+
+            <EditText
+                android:id="@+id/et_vcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/commonMargin2"
+
+                android:layout_marginRight="@dimen/commonMargin2"
+                android:layout_marginTop="@dimen/commonMargin2"
+                android:layout_toLeftOf="@+id/btn_vcode"
+                android:digits="@string/digits_number"
+                android:hint="@string/login_input_vcode"
+                android:inputType="number"
+                android:maxLength="@integer/length_vcode"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+        </RelativeLayout>
+      <!--  <Button
+            android:id="@+id/btn_vcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/et_vcode"
+            android:layout_alignRight="@id/et_vcode"
+            android:layout_alignTop="@id/et_vcode"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/theme_black_7f"
+            android:paddingLeft="@dimen/commonMargin2"
+            android:paddingRight="@dimen/commonMargin2"
+            android:text="@string/send_vcode" />-->
+
+    <!--    <Button
+            android:id="@+id/btn_vcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_vcode"
+            />-->
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/commonMargin2"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:layout_marginTop="@dimen/commonMargin2"
+        android:hint="@string/libPassword_hint"
+        android:inputType="textPassword"
+        android:maxLength="@integer/length_password"
+        android:maxLines="1"
+        android:singleLine="true"
+         />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/common_btn_style"
+        android:layout_marginLeft="@dimen/commonMargin2"
+        android:layout_marginRight="@dimen/commonMargin2"
+        android:layout_marginTop="58.0dip"
+        android:enabled="true"
+        android:text="@string/sign_up_1" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/preference_item"
+    android:title="设置">
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="save_flow"
+            android:defaultValue="false"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_sound"/>
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_ratio"/>
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_sence"/>
+        <CheckBoxPreference
+            android:widgetLayout="@layout/switch_item"
+            android:key="save_flow"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_safe_desk"/>
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_time_zone"/>
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_time"/>
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_light_hz"/>
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_recorder_languaga"/>
+
+
+        <CheckBoxPreference
+            android:widgetLayout="@layout/switch_item"
+            android:key="save_flow"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_mic"/>
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_sd_state"/>
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_video_state"/>
+
+        <RingtonePreference
+            android:widgetLayout="@layout/select_item"
+            android:key="allow_push"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_video_section"/>
+
+        <CheckBoxPreference
+            android:widgetLayout="@layout/switch_item"
+            android:key="save_flow"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_clear"/>
+
+
+        <CheckBoxPreference
+            android:widgetLayout="@layout/switch_item"
+            android:key="save_flow"
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
+            android:title="@string/set_reset"/>
+
+
+
+    <Preference
+        android:layout="@layout/preference_item_single"
+        android:key="save">
+    </Preference>
+</PreferenceScreen>

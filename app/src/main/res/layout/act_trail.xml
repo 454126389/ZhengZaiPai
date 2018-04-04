@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/title_bar_status"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <ImageButton
+                android:id="@+id/lib_btn_back"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="12.0dip"
+                android:src="@mipmap/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/lib_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:maxLines="1"
+                android:maxWidth="240.0dip"
+                android:singleLine="true"
+                android:textColor="@color/textTitleColor"
+                android:textSize="@dimen/largeTextSize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/commonMargin2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/lbs_switch"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/lbs_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/grey_400" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/sel_common_item"
+        android:drawableEnd="@mipmap/arrow_down_grey"
+        android:drawableRight="@mipmap/arrow_down_grey"
+        android:gravity="center"
+        android:paddingBottom="6.0dip"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:paddingTop="6.0dip"
+        android:textColor="@color/textColorContent" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_begin"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/sel_common_item"
+            android:orientation="vertical"
+            android:paddingBottom="6.0dip"
+            android:paddingTop="6.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@mipmap/arrow_down_grey"
+                android:drawableRight="@mipmap/arrow_down_grey"
+                android:gravity="center"
+                android:text="起点"
+                android:textColor="#ff26c300"
+                android:textSize="@dimen/textSize"
+                />
+
+            <TextView
+                android:id="@+id/begin_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:text="00:00"
+                android:textSize="@dimen/XLargeTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/sel_common_item"
+            android:orientation="vertical"
+            android:paddingBottom="6.0dip"
+            android:paddingTop="6.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="历时"
+                android:textColor="@color/textColorContent"
+                android:textSize="@dimen/textSize"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/textColorContent"
+                android:textSize="@dimen/textSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/layout_end"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/sel_common_item"
+            android:orientation="vertical"
+            android:paddingBottom="6.0dip"
+            android:paddingTop="6.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@mipmap/arrow_down_grey"
+                android:drawableRight="@mipmap/arrow_down_grey"
+                android:gravity="center"
+                android:text="终点"
+                android:textColor="#fff54336"
+                android:textSize="@dimen/textSize"
+              />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:text="23:59"
+                android:textSize="@dimen/XLargeTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/map_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/device_location_ic_layer"
+            android:visibility="gone" />
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="98.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/commonMargin2"
+            android:paddingLeft="@dimen/commonMargin2"
+            android:paddingRight="@dimen/commonMargin2"
+            android:paddingTop="@dimen/commonMargin2"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/position_date"
+                android:textColor="@color/textHintColor"
+                android:textSize="@dimen/textSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textHintColor"
+                android:textSize="@dimen/textSize"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+                app:layout_constraintLeft_toRightOf="@id/tv_name"
+                app:layout_constraintStart_toEndOf="@id/tv_name" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:background="@color/textHintColor"
+                app:layout_constraintBottom_toBottomOf="@id/tv_date"
+                app:layout_constraintLeft_toLeftOf="@id/tv_date"
+                app:layout_constraintStart_toEndOf="@id/tv_date"
+                app:layout_constraintTop_toTopOf="@id/tv_date" />
+
+            <TextView
+                android:id="@+id/tv_position_datatype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:text="@string/data_type_gps"
+                android:textColor="@color/textHintColor"
+                android:textSize="@dimen/textSize"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+                app:layout_constraintLeft_toRightOf="@id/divider"
+                app:layout_constraintStart_toEndOf="@id/divider" />
+
+            <TextView
+
+                android:id="@+id/tv_address"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="西乡街道"
+                android:textSize="@dimen/largeTextSize"
+                app:layout_constraintBottom_toTopOf="@+id/tv_address1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_address1"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="广东省深圳市宝安区西乡街道劳动路576号财富港花园科技园B座1、、2区"
+                android:textColor="@color/textHintColor"
+                android:textSize="@dimen/textSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_address"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_address" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="136.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/commonMargin2"
+            android:layout_marginTop="12.0dip"
+            app:cardCornerRadius="20.0dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/replay"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="0.5dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sel_common_item"
+                    android:text="@string/replay"
+                  />
+
+                <Button
+                    android:id="@+id/trail"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="0.5dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sel_common_item"
+                    android:text="@string/trail"
+                  />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

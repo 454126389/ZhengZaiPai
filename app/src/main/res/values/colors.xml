@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C5281B</color>
+    <color name="colorPrimaryDark">#C5281B</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="theme_black_7f">#8f000000</color>
+    <color name="colorGray">#33000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="sign_up_notice">#fffff2dc</color>
+    <color name="newThemeColorPressed">#ffffa353</color>
+
+    <color name="textColorDefault">#ff3c3c3c</color>
+    <color name="themeTextColor">@color/libColorPrimary</color>
+    <color name="libColorPrimary">#ffff7c06</color>
+    <color name="libColorPrimaryDark">#ffff7c06</color>
+    <color name="libColorAccent">#ffff7c06</color>
+
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- QRCode scanner color end -->
+
+
+
+    <color name="colorPrimary_pressed">#8003a9f4</color>
+    <color name="colorAccent_pressed">#80FF4081</color>
+
+    <color name="main_background">#c5364a</color>
+    <color name="line_bg">#CDCDCD</color>
+    <color name="popup_bg">#8f000000</color>
+
+    <color name="gray">#cccccc</color>
+
+    <color name="watch_check">#F9B24A</color>
+    <color name="divider">#ffdddddd</color>
+    <color name="home_view_group_divider">#ff16b2ff</color>
+    <color name="textColorContent">#ff787878</color>
+    <color name="txt_color">#48495F</color>
+    <color name="color_light_blue">#00DDB6</color>
+
+    <color name="textTitleColor">#ff1e1e1e</color>
+    <color name="grey_400">#ffbdbdbd</color>
+
+    <color name="item_bg">#FFFFFF</color>
+    <color name="textHintColor">#ffa4a4a4</color>
+    <color name="grey">#ffdcdcdc</color>
+    <color name="red_500">#ffe51c23</color>
+    <color name="red_600">#ffdd191d</color>
+
+
+    <color name="libColorPressed">#fff96c19</color>
+
+    <color name="border_grey">#ffb4b4b4</color>
+
+    <color name="background">#fff3f3f3</color>
+
+    <color name="cling_background">#99000000</color>
+    <color name="black_alpha_240">#f0000000</color>
+
+    <color name="disable">#ffa4a4a4</color>
+    <color name="red_700">#ffd01716</color>
+
+    <color name="item_divider">#EFEFEF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="commonThemeColor">#ff26a0f6</color>
+    <color name="commonThemeColorPressed">#8826a0f6</color>
+
+
+    <color name="common_text_gray">#999999</color>
+    <color name="common_top_bg">#AE9459</color>
+    <color name="common_tab_btn">#C6AD64</color>
+    <color name="common_char_line">#e5d7b0</color>
+    <color name="common_line_chartview_scal">#bababa</color>
+    <color name="common_point_line">#ECECEC</color>
+
+</resources>

@@ -1,0 +1,502 @@
+<resources>
+    <string name="app_name">征仔手錶</string>
+
+    <!--baseview-->
+
+    <string name="btn_back">返回</string>
+    <string name="btn_add">添加</string>
+
+    <string name="net_error">請求失敗</string>
+    <string name="net_suc">請求成功</string>
+
+    <!--lockdevice-->
+    <string name="device_id">設備ID</string>
+    <string name="card_iccid">征卡ICCID</string>
+    <string name="device_phone">手機號碼</string>
+    <string name="device_name">設備名稱</string>
+    <string name="card_name">征卡名稱</string>
+    <string name="device_code">獲取驗證碼</string>
+    <string name="btn_lock">綁定</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!--device setting-->
+    <string name="set_mov_tar">行駛間隔(s)</string>
+    <string name="set_stop_tar">停車間隔(min)</string>
+    <string name="set_lk_tar">路況發生間隔(min)</string>
+    <string name="set_stop_sw">停車監控</string>
+    <string name="set_shock_sence">震動靈敏度</string>
+    <string name="set_new_sw">新聞播報</string>
+    <string name="set_weather_sw">天氣服務</string>
+    <string name="set_email_sw">郵件報警</string>
+
+
+    <!--recorder setting-->
+    <string name="set_sound">音量</string>
+    <string name="set_ratio">解析度</string>
+    <string name="set_sence">靈敏度</string>
+    <string name="set_safe_desk">屏保</string>
+    <string name="set_time_zone">時區選擇</string>
+    <string name="set_time">時間設置</string>
+    <string name="set_light_hz">設置光源頻率</string>
+    <string name="set_recorder_languaga">語言</string>
+    <string name="set_mic">麥克風</string>
+    <string name="set_sd_state">手機存儲狀態</string>
+    <string name="set_video_state">存儲卡狀態</string>
+    <string name="set_video_section">視頻分段</string>
+    <string name="set_clear">格式化</string>
+    <string name="set_reset">恢復默認</string>
+
+    <!--app_setting-->
+    <string name="set_languaga">語言</string>
+    <string name="set_clear_save">清理緩存</string>
+    <string name="set_about">關於</string>
+    <string name="set_help">幫助</string>
+
+    <!--about-->
+    <string name="about_phone">電話:(0592)6108103</string>
+    <string name="about_mail">傳真:(0592)6681270</string>
+    <string name="about_hot_line">熱線:4006-392-999</string>
+    <string name="about_qq">QQ:4006-392-999</string>
+    <string name="about_web">官網:http://new.conqueror.cn/</string>
+
+    <!--net-->
+    <string name="loading_failed">數據加載失敗</string>
+
+
+    <!--language-->
+    <!--<string name="languaga_choise">選擇語言</string>-->
+    <string name="languaga_cn">簡體中文</string>
+    <string name="languaga_cntw">繁體中文</string>
+    <string name="languaga_english">英語</string>
+
+    <!--haotouse-->
+    <string name="skip">SKIP</string>
+    <string name="done">DONE</string>
+    <string name="welcome">Welcome!</string>
+    <string name="ht_welcome_desc">Endoscope lets you to stream live video between android devices!</string>
+
+    <!--tab_main-->
+    <string name="tab_onway">在路上</string>
+    <string name="tab_mydevice">我的設備</string>
+    <string name="tab_zzwarn">征仔預警</string>
+    <string name="tab_usercenter">我</string>
+
+
+    <!--tab_mirror-->
+    <string name="tab_mirror_1">查詢車輛</string>
+    <string name="tab_mirror_2">監控</string>
+    <string name="tab_mirror_3">數據採集</string>
+    <string name="tab_mirror_4">遠程關機</string>
+
+
+    <!--watch-->
+
+
+    <!--tab-->
+    <string name="tab_home">主頁</string>
+    <string name="tab_device">設備管理</string>
+    <string name="tab_map">地圖</string>
+    <string name="tab_find">發現</string>
+    <string name="tab_me">我的</string>
+    <!--登錄-->
+    <string name="libPassword_hint">請輸入6–16位密碼</string>
+    <string name="libLogin">登錄</string>
+    <string name="libAutoLogin">自動登錄</string>
+    <string name="libAccount_hint">手機號/郵箱</string>
+    <string name="login_SelectLoginType">使用其他方式登錄</string>
+
+    <string name="forgot_pwd">忘記密碼？</string>
+
+    <!--首頁-->
+    <string name="home_science">今日資訊</string>
+    <string name="love_bonus">愛心獎勵</string>
+    <string name="home_add_device">添加設備</string>
+    <string name="edit_info">設備資訊</string>
+    <string name="unbind">解綁設備</string>
+
+
+    <string name="menu_wechat">微信</string>
+    <string name="menu_phone_list">電話本</string>
+    <string name="menu_phone">電話</string>
+    <string name="menu_dad">上課禁用</string>
+    <string name="menu_location">定位</string>
+
+    <string name="device_card">設備名片</string>
+    <string name="chat_edit_hint">對寶貝說點什麼…</string>
+    <string name="hold_to_talk">按住說話</string>
+    <string name="send">發送</string>
+
+    <string name="chat_empty_tip">沒有聊天記錄</string>
+    <string name="chat_empty_tip1">"還沒有和%1$s聊過天呢，想和%1$s說點什麼嗎？
+您可以在這裏隨心聊。"</string>
+
+    <string name="login_bind_device_tip">提示：親，如果有註冊碼只能使用註冊碼，如果沒有則用設備ID。</string>
+    <string name="no_qrcode">二維碼丟失了？</string>
+    <string name="reg_code_">註冊碼</string>
+    <string name="scan_or_input">掃描或輸入</string>
+    <string name="login_nickname_hint">寶貝昵稱</string>
+    <string name="nickname_">設備昵稱</string>
+    <string name="relation_to_me">我是寶貝的：</string>
+
+    <!--HomeFragment-->
+    <string name="tx_near">附近</string>
+    <string name="tx_local_type_0">無法定位</string>
+    <string name="tx_local_type_1">GPS定位</string>
+    <string name="tx_local_type_2">基站定位</string>
+    <string name="tx_local_type_3">WIFI定位</string>
+    <!--AlertDialogFragment-->
+    <string name="tx_call">呼叫</string>
+    <string name="tx_call_back">語音監護</string>
+    <string name="tx_call_fail">不能打電話</string>
+    <string name="tx_hint_phone">輸入設備電話號碼</string>
+
+    <!--ChatActivity-->
+    <string name="tx_permission_fail">已拒絕許可權</string>
+    <string name="tx_save_start">鬆開保存</string>
+    <string name="tx_speak_start">按住說話</string>
+    <string name="tx_no_null">輸入不能為空</string>
+
+    <!--CallBackActivity-->
+    <string name="tx_call_suc">回撥請求已經發出</string>
+
+    <!--ActClockActivity-->
+    <string name="tx_clock_type1">一次</string>
+    <string name="tx_clock_type2">每天</string>
+    <string name="tx_clock_type3">自定義</string>
+
+    <string name="week01">週一</string>
+    <string name="week02">週二</string>
+    <string name="week03">週三</string>
+    <string name="week04">週四</string>
+    <string name="week05">週五</string>
+    <string name="week06">週六</string>
+    <string name="week07">周日</string>
+
+    <string name="repeat_time">重複時間</string>
+    <!--ActFriendActivity-->
+    <string name="tx_tip">提示</string>
+    <string name="tx_choise">選擇操作</string>
+    <string name="tx_rename">重命名</string>
+    <string name="tx_del_friend">解除好友</string>
+    <string name="tx_name_friend">輸入好友昵稱</string>
+
+    <string name="btn_edit">編輯</string>
+
+    <!--設備-->
+    <!--DeviceFragment-->
+    <string name="tx_introduce">不同的智能設備，特有功能會不同</string>
+    <string name="tx_remote">遠程操作</string>
+    <string name="tx_remote_shutdown">設備遠程關機</string>
+
+    <!--WifiActivity-->
+    <string name="tx_name_wifi">輸入WIFII密碼</string>
+
+    <!--AddDeviceActivity-->
+    <string name="tx_auth">授權</string>
+    <string name="tx_auth_tip">授權該設備可以使用</string>
+    <string name="tx_auth_wait">等待授權</string>
+    <string name="tx_authed">已經授權</string>
+
+
+    <string name="tx_auth_suc">綁定成功</string>
+    <string name="tx_auth_did">已經綁定</string>
+    <string name="tx_no_find">設備沒找到</string>
+
+
+    <!--<string name="test_id">2016000891</string>-->
+    <!--<string name="test_phone">18106573838</string>-->
+    <string name="tip_searching">正在獲取地址</string>
+    <string name="tip_near">附近</string>
+    <string name="tip_watch_poi">寶貝的位置</string>
+    <string name="tip_no_find_watch">找不到該設備</string>
+    <string name="phone_book">電話本</string>
+    <string name="home_dnd">上課禁用</string>
+    <string name="find_watch">找設備</string>
+    <string name="digits_phone">0123456789+</string>
+    <string name="digits_number">0123456789</string>
+    <string name="login_phone_hint">手錶電話號碼</string>
+    <string name="phone_hint">號碼長度在2–19之間</string>
+    <string name="pick_hint">手機聯繫人</string>
+    <string name="input_name">請輸入姓名</string>
+    <string name="btn_sure">確定</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="tips_call1">*點擊號碼可進行編輯</string>
+    <string name="tips_call2">成功呼叫後將保存新號碼</string>
+    <string name="call1">呼叫</string>
+
+
+    <string name="set_suc">設置成功</string>
+
+    <string name="no_null">輸入不能為空</string>
+
+
+
+    <string name="sleep_cal">睡眠設置</string>
+    <string name="sleep_cal_switch">睡眠開關</string>
+    <string name="time_slot">時段</string>
+    <string name="target_">目標</string>
+    <string name="step_cal_switch">計步開關</string>
+    <string name="time_slot_1">時段1</string>
+    <string name="time_slot_2">時段2</string>
+    <string name="time_slot_3">時段3</string>
+
+
+    <string name="time_slot_">時間段：</string>
+    <string name="step_length_">步距：</string>
+    <string name="weight_">體重：</string>
+
+    <string name="special_function">特有功能</string>
+    <string name="apply_health">健康</string>
+    <string name="remote_camera">遠程拍照</string>
+    <string name="touch_friends">碰碰管理</string>
+    <string name="schedule">課程表</string>
+
+
+    <string name="base_function">基礎功能</string>
+    <string name="monitor1">語音監護</string>
+    <string name="wlan">終端WIFI設置</string>
+    <string name="sos_family">SOS緊急號碼</string>
+    <string name="alarm_clock">設備鬧鐘</string>
+    <string name="sms_alart">短信提醒</string>
+    <string name="push_switch">推送開關</string>
+    <string name="workmode">工作模式</string>
+    <string name="remote_shutdown">遠程關機</string>
+
+
+
+    <string name="device_love_tips">寶貝很棒，給點獎勵吧！</string>
+    <string name="ok">@android:string/ok</string>
+
+
+    <string name="state">狀態</string>
+    <string name="state_1">等待安裝</string>
+    <string name="state_2">失敗，重新安裝</string>
+    <string name="state_3">卸載</string>
+    <string name="state_4">安裝</string>
+    <string name="login_no_bind_data">當前無正在綁定的設備</string>
+    <string name="device">設備</string>
+
+    <string name="default_hour_min">00:00</string>
+    <string name="dnd_tip_1">提示：</string>
+    <string name="dnd_tip">"1.寶貝正在學習，請勿打擾
+2.只對週一到週五有效"</string>
+
+    <string name="once">一次</string>
+    <string name="every_day">每日</string>
+    <string name="zdy">自定義</string>
+
+
+    <string name="find_watch_anytime_anywhere">隨時隨地知道設備的位置</string>
+    <string name="setting_look_for_watch_tip_01">1.點擊查找設備按鈕</string>
+    <string name="setting_look_for_watch_tip_02">2.在彈框中點擊確定</string>
+    <string name="setting_look_for_watch_tip_03">3.指令發送成功</string>
+    <string name="setting_look_for_watch_tip_04">4.設備接收指令後報警</string>
+    <string name="remove_push_switch">取下設備開關</string>
+
+    <string name="device_course_cling">"     1.點擊這裏設置
+課程時間表哦!"</string>
+
+
+    <string name="normal_mode_prefered">溫馨提示：親，建議選擇正常模式！</string>
+    <string name="workmode_follow">跟隨模式：1分鐘/次</string>
+    <string name="workmode_normal">正常模式：10分鐘/次</string>
+    <string name="workmode_saving">省電模式：1小時/次</string>
+
+
+    <string name="num1">號碼1</string>
+    <string name="num2">號碼2</string>
+    <string name="num3">號碼3</string>
+
+
+    <string name="loginLoginByAccount">手機登錄</string>
+    <string name="loginLoginByWeChat">微信登錄</string>
+    <string name="select_login_type">選擇登錄方式</string>
+    <string name="login_goSignUp">還沒有帳號？馬上註冊</string>
+    <string name="send_vcode">獲取驗證碼</string>
+    <string name="sign_up_1">確認註冊</string>
+    <string name="sign_up_failed">註冊失敗</string>
+    <string name="login_input_phone">請輸入手機號碼</string>
+    <string name="login_input_vcode">請輸入驗證碼</string>
+    <string name="reg_code_hint">請輸入您的設備註冊碼</string>
+    <string name="login_sign_up_notice">注：請勿使用設備的SIM卡號碼進行註冊</string>
+    <string name="login_sign_up_step_1">請輸入家長/本機號碼</string>
+
+    <string name="apply_mother">媽媽</string>
+    <string name="apply_father">爸爸</string>
+    <string name="apply_boy">帥哥</string>
+    <string name="apply_girl">美女</string>
+
+
+    <string name="grandfather">外公</string>
+    <string name="grandma">奶奶</string>
+    <string name="grandmother">外婆</string>
+    <string name="grandpa">爺爺</string>
+
+    <string name="guardian_phone_number">監護號碼</string>
+    <string name="device_lowbattery_remind">低電量提醒</string>
+    <string name="device_sos_reminder">SOS提醒</string>
+    <string name="device_remove_remind">取下設備提醒</string>
+
+    <string name="sleep">睡眠</string>
+    <string name="step">計步</string>
+    <string name="friends_no_data">您還沒有碰碰好友喲，趕緊碰碰添加吧！</string>
+
+
+
+    <string name="deviceWifiTip">若終端已連接WiFi，可點擊檢測查看詳情。</string>
+    <string name="deviceWifiSettingsTip">已設置的WiFi</string>
+    <string name="deviceDeviceWifiScan">終端WiFi檢測</string>
+    <string name="deviceWifiChecking">檢測中</string>
+    <string name="deviceWifi">終端WIFI</string>
+    <string name="deviceAddWifiNew">設置新WiFi</string>
+
+
+    <string name="reg_code_null">註冊碼不能為空</string>
+    <string name="nickname_null">昵稱不能為空</string>
+    <string name="relice_null">關係不能為空</string>
+
+
+    <string name="auth_fail">已拒絕許可權</string>
+
+
+    <!--我的-->
+    <string name="person_message">消息中心</string>
+    <string name="collect">收藏</string>
+    <string name="education_attention">關注</string>
+    <string name="education_fans">粉絲</string>
+
+    <string name="score_rank">排行榜</string>
+    <string name="my_medal">我的勳章</string>
+    <string name="account_manager">輔管理員</string>
+    <string name="about">關於</string>
+
+    <string name="family_list">家庭成員</string>
+    <string name="tx_company">瑞憶科技有限公司所有權@2017-2018</string>
+
+
+
+    <!--地圖-->
+    <string name="map_mode">模式</string>
+    <string name="trail">足跡</string>
+    <string name="home_rail">區域</string>
+
+
+    <string name="data_type_gps">衛星定位</string>
+
+    <string name="position_date">定位時間：</string>
+
+    <string name="deviceAddNewSafeZone">添加新的安全區域</string>
+    <string name="device_safe_zone_name">區域名稱</string>
+    <string name="device_safe_zone_aear">範圍區域</string>
+    <string name="device_safe_zone_hint">請輸入1-9個字元</string>
+    <string name="save">保存</string>
+
+
+    <string name="lbs_switch">基站開關</string>
+    <string name="replay">回放</string>
+
+
+    <string name="delete">刪除</string>
+    <string name="repeat">重複</string>
+
+    <string name="need_one">至少保留一個號碼</string>
+    <string name="tip_error">錯誤</string>
+    <string name="tip_fail">失敗</string>
+    <string name="tip_suc">成功</string>
+    <string name="tip_shut_down">設備即將關閉</string>
+    <string name="tip_save_suc">保存成功</string>
+    <string name="tip_back_finish">再按一次退出程式</string>
+
+    <string name="tip_trail_null">沒有軌跡</string>
+
+    <string name="tx_onclick">點擊</string>
+    <string name="tx_refrish">刷新TA的位置</string>
+    <string name="tx_zone_name">自定義圍欄</string>
+    <string name="tx_zone_tip">請點擊地圖中心生成安全區域</string>
+    <string name="tx_zone_limit">安全區域只能設置3個</string>
+
+
+    <!--login-->
+    <string name="tx_input_error">帳號/密碼錯誤</string>
+    <string name="tx_number_null">號碼不能為空</string>
+    <string name="tx_vcode_null">驗證碼不能為空</string>
+    <string name="tx_psw_null">密碼不能為空</string>
+    <string name="tx_vcode_error">註冊失敗，檢查驗證碼是否過期</string>
+
+
+    <string name="tx_no_power">沒有權限</string>
+
+</resources>

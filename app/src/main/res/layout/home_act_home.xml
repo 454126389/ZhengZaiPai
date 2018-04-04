@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b5b5b5" />
+<RadioGroup android:orientation="horizontal" android:id="@+id/tabs_group" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+    <RadioButton android:textSize="12.0dip" android:gravity="bottom|center" android:id="@+id/tab_homepage" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/tab_home" android:drawableTop="@drawable/home_tab_homepage" android:layout_weight="1.0" />
+    <RadioButton android:textSize="12.0dip" android:gravity="bottom|center" android:id="@+id/tab_device" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/tab_device" android:drawableTop="@drawable/home_tab_device" android:layout_weight="1.0" />
+    <RadioButton android:textSize="12.0dip" android:gravity="bottom|center" android:id="@+id/tab_location" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/tab_map" android:drawableTop="@drawable/home_tab_location" android:layout_weight="1.0" />
+
+    <RadioButton
+        android:id="@+id/tab_find"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:button="@null"
+        android:drawableTop="@drawable/home_tab_find"
+        android:gravity="bottom|center"
+        android:padding="6.0dip"
+        android:text="@string/tab_find"
+        android:textSize="12.0dip"
+        android:visibility="gone" />
+    <RadioButton android:textSize="12.0dip" android:gravity="bottom|center" android:id="@+id/tab_my" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/tab_me" android:drawableTop="@drawable/home_tab_my" android:layout_weight="1.0" />
+</RadioGroup>
+
+</LinearLayout>

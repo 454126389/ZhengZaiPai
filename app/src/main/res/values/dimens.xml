@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="circular_textview_size">20sp</dimen>
+    <dimen name="circular_view_dimension">100dp</dimen>
+    <dimen name="share_them_actions_margin">20dp</dimen>
+
+    <dimen name="tab_hight">65.32999dp</dimen>
+
+    <dimen name="more_window_item_margin">12dp</dimen>
+
+
+    <dimen name="defaultTextSize">14.0dip</dimen>
+    <dimen name="home_banner_height">108.0dip</dimen>
+    <dimen name="textSize">12.0dip</dimen>
+    <dimen name="status_bar_height">0.0dip</dimen>
+    <dimen name="home_tablayout_height">50.0dip</dimen>
+    <dimen name="titleBarHeight">44.0dip</dimen>
+    <dimen name="largeTextSize">16.0dip</dimen>
+    <dimen name="commonMargin2">12.0dip</dimen>
+    <dimen name="commonMargin">10.0dip</dimen>
+
+   <dimen name="dp_5">5.0dip</dimen>
+   <dimen name="dp_8">8.0dip</dimen>
+   <dimen name="dp_25">25.0dip</dimen>
+   <dimen name="dp_30">30.0dip</dimen>
+    <dimen name="dp_65">65.0dip</dimen>
+    <dimen name="dp_120">120.0dip</dimen>
+
+    <dimen name="smallTextSize">10.0dip</dimen>
+
+    <dimen name="XLargeTextSize">18.0dip</dimen>
+    <dimen name="XXXLargeTextSize">22.0dip</dimen>
+
+    <dimen name="home_menu_size">48.0dip</dimen>
+
+    <dimen name="button_corner_radius">6.0dip</dimen>
+
+    <dimen name="activity_half_vertical_margin">6.0dip</dimen>
+    <dimen name="commonMarginTop">21.0dip</dimen>
+
+    <dimen name="commonBtnHeight">36.0dip</dimen>
+    <dimen name="divider_height2">0.5dip</dimen>
+    、
+    <dimen name="commonIconSize">28.0dip</dimen>
+    <dimen name="refresh_drawable_size_google">40.0dip</dimen>
+
+    <dimen name="marker_width">58.0dip</dimen>
+    <dimen name="marker_height">66.0dip</dimen>
+
+
+    <dimen name="divider_height">1.0dip</dimen>
+    <dimen name="refresh_header_height_google">100.0dip</dimen>
+    <dimen name="device_max_chat_width">240.0dip</dimen>
+    <dimen name="device_max_chat_img_width">144.0dip</dimen>
+
+    <dimen name="device_min_chat_img_width">72.0dip</dimen>
+    <dimen name="sectionHeight">50dp</dimen>
+
+    <dimen name="deviceSuperlargeTextSize">32.0dip</dimen>
+    <dimen name="deviceXLargeTextSize">21.0dip</dimen>
+
+    <dimen name="maxTextSize">18.0dip</dimen>
+
+</resources>

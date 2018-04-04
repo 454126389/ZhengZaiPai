@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="36.0dip"
+    android:background="#fff9f9f9"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/commonMargin2"
+    android:paddingRight="@dimen/commonMargin2">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end|center"
+        android:text="特有功能"
+        android:textColor="@color/textColorContent" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center"
+        android:text="不同的智能设备，特有功能会不同"
+        android:textColor="@color/textHintColor"
+        android:textSize="@dimen/textSize" />
+</LinearLayout>

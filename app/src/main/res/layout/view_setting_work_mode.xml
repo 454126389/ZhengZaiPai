@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_half_vertical_margin"
+    android:paddingTop="@dimen/activity_half_vertical_margin">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_half_vertical_margin"
+        android:paddingTop="@dimen/activity_half_vertical_margin"
+        android:text="@string/normal_mode_prefered"
+        android:textSize="12.0sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/setting_work_mode_rl_01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_half_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_half_vertical_margin">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1.0"
+                android:paddingBottom="@dimen/activity_half_vertical_margin"
+                android:paddingTop="@dimen/activity_half_vertical_margin"
+                android:text="@string/workmode_normal"
+                />
+
+            <RadioButton
+                android:id="@+id/setting_work_mode_rb_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_ic_cb"
+                android:button="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_work_mode_rl_02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_half_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_half_vertical_margin">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1.0"
+                android:paddingBottom="@dimen/activity_half_vertical_margin"
+                android:paddingTop="@dimen/activity_half_vertical_margin"
+                android:text="@string/workmode_saving"
+               />
+
+            <RadioButton
+                android:id="@+id/setting_work_mode_rb_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_ic_cb"
+                android:button="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_work_mode_rl_03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/activity_half_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_half_vertical_margin">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1.0"
+                android:paddingBottom="@dimen/activity_half_vertical_margin"
+                android:paddingTop="@dimen/activity_half_vertical_margin"
+                android:text="@string/workmode_follow"
+              />
+
+            <RadioButton
+                android:id="@+id/setting_work_mode_rb_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_ic_cb"
+                android:button="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+
+            android:id="@+id/btn_work_sure"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn"
+            android:text="@string/btn_sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largeTextSize" />
+    </LinearLayout>
+
+</LinearLayout>

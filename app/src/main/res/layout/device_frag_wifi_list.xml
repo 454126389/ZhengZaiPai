@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/lib_layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/commonMarginTop"
+                android:layout_marginLeft="@dimen/commonMargin"
+                android:layout_marginRight="@dimen/commonMargin"
+                android:layout_marginTop="@dimen/commonMarginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:src="@mipmap/device_ic_wifi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_wifi"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:layout_marginTop="@dimen/commonMargin"
+                    android:text="@string/deviceWifi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/icon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_wifi_label"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12.0dip"
+                    android:layout_marginLeft="@dimen/commonMargin"
+                    android:layout_marginTop="4.0dip"
+                    android:maxLines="2"
+                    android:text="@string/deviceWifiTip"
+                    android:textColor="@color/textHintColor"
+                    android:textSize="@dimen/textSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/icon"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/icon"
+                    app:layout_constraintTop_toBottomOf="@id/tv_wifi" />
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_marginLeft="@dimen/commonMargin"
+                android:layout_marginRight="@dimen/commonMargin"
+                android:background="@drawable/dashed_line"
+                android:layerType="software" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/status_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18.0dip"
+                    android:layout_marginTop="28.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_weight="1.0"
+                        android:text="@string/deviceWifiSettingsTip" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_loading"
+                        android:layout_width="100.0dip"
+                        android:layout_height="28.0dip"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/border_grey"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4.0dip"
+                        android:paddingTop="4.0dip">
+
+                        <TextView
+                            android:id="@+id/btn_scan"
+                            android:layout_width="100.0dip"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/deviceDeviceWifiScan"
+                            android:textColor="@color/commonThemeColor"
+                            android:textSize="@dimen/textSize" />
+
+                        <android.support.v4.widget.ContentLoadingProgressBar
+                            android:id="@+id/iv_loading"
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="14.0dip"
+                            android:layout_height="14.0dip"
+                            android:indeterminateDrawable="@drawable/anim_progressbar_grey"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_checking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/deviceWifiChecking"
+                            android:textSize="@dimen/textSize"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                    android:id="@+id/refresh_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:load_more_enabled="false">
+
+                    <include
+                        android:id="@+id/swipe_refresh_header"
+                        layout="@layout/layout_google_hook_header" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/swipe_target"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical" />
+
+                    <!--<include-->
+                        <!--android:id="@+id/swipe_load_more_footer"-->
+                        <!--layout="@layout/layout_google_hook_footer" />-->
+                </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/common_btn_style"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/sel_border_common_theme"
+            android:text="@string/deviceAddWifiNew"
+            android:textColor="@color/textHintColor"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

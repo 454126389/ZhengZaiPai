@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/lib_layout_title_bar" />
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout android:id="@+id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@+id/swipe_refresh_header" layout="@layout/layout_google_hook_header" />
+        <ScrollView android:id="@+id/swipe_target" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/device_setting_section">
+                    <LinearLayout android:id="@+id/layout_step_time" style="@style/device_setting_item_group">
+                        <ImageView android:src="@mipmap/device_ic_step_time" style="@style/device_setting_v_icon" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/device_setting_value_group">
+                            <TextView android:text="@string/time_slot_" style="@style/device_setting_tv_label" />
+                            <TextView android:id="@+id/step_cal_tv_time_slot" style="@style/device_setting_item_tv_value" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_step_length"
+                        style="@style/device_setting_item_group">
+
+                        <ImageView
+                            style="@style/device_setting_v_icon"
+                            android:src="@mipmap/device_ic_step_foot1" />
+
+                        <LinearLayout
+                            style="@style/device_setting_value_group"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TextView
+                                style="@style/device_setting_tv_label"
+                                android:text="@string/step_length_" />
+
+                            <TextView
+                                android:id="@+id/step_cal_tv_step_length"
+                                style="@style/device_setting_item_tv_value" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/layout_step_weight" style="@style/device_setting_item_group">
+                        <ImageView android:src="@mipmap/device_ic_step_weight" style="@style/device_setting_v_icon" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/device_setting_value_group">
+                            <TextView android:text="@string/weight_" style="@style/device_setting_tv_label" />
+                            <TextView android:id="@+id/step_cal_tv_weight" style="@style/device_setting_item_tv_value" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_step_target"
+                        style="@style/device_setting_item_group"
+                        android:visibility="gone">
+
+                        <ImageView
+                            style="@style/device_setting_v_icon"
+                            android:src="@mipmap/device_ic_step_target" />
+
+                        <LinearLayout
+                            style="@style/device_setting_value_group"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TextView
+                                style="@style/device_setting_tv_label"
+                                android:text="@string/target_" />
+
+                            <TextView
+                                android:id="@+id/step_cal_tv_target"
+                                style="@style/device_setting_item_tv_value" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:clickable="false" style="@style/device_setting_item_group">
+                        <ImageView android:src="@mipmap/device_ic_step_switch" style="@style/device_setting_v_icon" />
+                        <RelativeLayout android:id="@+id/layout_step_cb" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/device_setting_value_group">
+                            <TextView android:text="@string/step_cal_switch" style="@style/device_setting_tv_label" />
+                            <android.support.v7.widget.SwitchCompat android:id="@+id/step_cal_cb_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+</LinearLayout>
